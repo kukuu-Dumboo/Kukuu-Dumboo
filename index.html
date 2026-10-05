@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Archive</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<header class="top">
+  <button class="menu" id="menu" aria-label="Open navigation" aria-expanded="false">Menu</button>
+  <a class="brand" href="#/home">Our Archive</a>
+  <nav id="nav" aria-label="Main">
+    <a href="#/home" data-r="home">Home</a><a href="#/article" data-r="article">Article</a>
+    <a href="#/blogs" data-r="blogs">Blogs</a><a href="#/pics" data-r="pics">Pics</a>
+    <a href="#/dates" data-r="dates">Dates</a><a href="#/trips" data-r="trips">Trips</a>
+    <a href="#/timeline" data-r="timeline">Timeline</a><a href="#/letters" data-r="letters">Letters</a>
+    <a href="#/more" data-r="more">More</a>
+  </nav>
+  <form id="sf" role="search"><input id="q" type="search" placeholder="Search the archive" aria-label="Search"></form>
+</header>
+<main id="app" tabindex="-1"></main>
+<footer class="foot"><span id="fid"></span> Private archive. <a href="#/note">Archive note</a></footer>
+<div id="lb" class="lb" hidden role="dialog" aria-modal="true" aria-label="Photograph viewer">
+  <button class="lbc" data-a="close" aria-label="Close">&times;</button>
+  <button class="lbn p" data-a="prev" aria-label="Previous">&lsaquo;</button>
+  <img id="lbi" alt="">
+  <button class="lbn n" data-a="next" aria-label="Next">&rsaquo;</button>
+  <div id="lbt" class="lbt"></div>
+</div>
+<script src="content-manifest.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
